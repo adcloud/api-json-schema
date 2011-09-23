@@ -1,0 +1,13 @@
+{
+  "description": "Base repsone foramt for everything",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "Status of the response / same as the HTTP header",
+      "type": "integer",
+      "required": true,
+      "minimum": 100,
+      "maximum": 599
+    }
+  }
+}

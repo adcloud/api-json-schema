@@ -1,0 +1,11 @@
+{
+  "description": "Response format for a single object / record",
+  "extends": "./base.json.schema",
+  "properties": {
+    "result": {
+      "description": "The response record",
+      "type": "object",
+      "required": true
+    }
+  }
+}

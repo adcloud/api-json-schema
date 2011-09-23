@@ -1,0 +1,58 @@
+{
+  "description": "This is the response format for collections",
+  "extends": "./record.json",
+  "properties": {
+    "result": {
+      "type": "array",
+    },
+    "collection": {
+      "description": "Metadata of the collection",
+      "type": "object",
+      "required": true,
+      "properties": {
+        "next_url": {
+          "description": "Absolute uri to the next page of the collection",
+          "type": ["string", "null"],
+          "format": "uri",
+          "required": true  
+        },
+        "prev_url": {
+          "description": "Absolute uri to the previous page of the collection",
+          "type": ["string", "null"],
+          "format": "uri",
+          "required": true  
+        },
+        "first_url": {
+          "description": "Absolute uri to the first page of the collection",
+          "type": "string",
+          "format": "uri",
+          "required": true  
+        },
+        "last_url": {
+          "description": "Absolute uri to the last page of the collection",
+          "type": "string",
+          "format": "uri",
+          "required": true  
+        },
+        "size": {
+          "description": "Total amout of elements in the collection",
+          "type": "integer",
+          "required": true, 
+          "minimum": 0
+        },
+        "per_page": {
+          "description": "Requested amount of elements per page",
+          "type": "integer",
+          "required": true,  
+          "minimum": 1
+        },
+        "pages": {
+          "description": "Total number of pages in this collection"
+          "type": "integer",
+          "required": true,  
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
