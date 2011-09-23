@@ -1,6 +1,6 @@
 {
   "description": "Response format for a single object / record",
-  "extends": "./base.json.schema",
+  "extends": "./base.json",
   "properties": {
     "result": {
       "description": "The response record",
