@@ -1,5 +1,5 @@
 {
-  "description": "Base repsone foramt for everything",
+  "description": "Base response format for everything",
   "type": "object",
   "properties": {
     "status": {
