@@ -1,0 +1,232 @@
+{
+  "description": "Response format for a advertiser report",
+  "extends": "./collection.json",
+  "properties": {
+    "result": {
+      "description": "List of all report records",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ad": {
+            "description": "Name of the ad",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "ad_count": {
+            "description": "Number of ads in a placement",
+            "type": "integer",
+            "required": true
+          },
+          "ad_id": {
+            "description": "ID of an ad",
+            "type": "integer",
+            "required": true
+          },
+          "ad_impressions": {
+            "description": "Number of ad_impressions from one ad",
+            "type": "integer",
+            "required": true
+          },
+          "ad_impressions_costs" {
+            "description": "Cost of an booking on an ad_placement",
+            "type": "number",
+            "required": true
+          },
+          "ad_placement_id": {
+            "description": "ID of an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "ad_position": {
+            "description": "Position of an ad in a ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "booking": {
+            "description": "Name of an booking",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "booking_id": {
+            "description": "ID of an booking",
+            "type": "integer",
+            "required": true
+          },
+          "cancellations": {
+            "description": "Number of cancellations",
+            "type": "integer",
+            "required": true
+          },
+          "clicks": {
+            "description": "Number of clicks from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_filtered": {
+            "description": "Filtered clicks from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_head": {
+            "description": "Number of clicks on a headline of an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_image": {
+            "description": "Number of clicks on a image of an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_link": {
+            "description": "Number of clicks on a link of an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_overdelivered": {
+            "description": "Overdelivered clicks from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_txt": {
+            "description": "Number of clicks on a text of an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "clicks_costs": {
+            "description": "Cost of an booking for clicks",
+            "type": "number",
+            "required": true
+          },
+          "country": {
+            "description": "Name of the country",
+            "type": "string",
+            "maxLength": 2,
+            "required": true
+          },
+          "currency": {
+            "description": "Name of the currency",
+            "type": "string",
+            "maxLength": 3,
+            "required": true
+          },
+          "date": {
+            "description": "Date of the report",
+            "type": "string",
+            "format": "date",
+            "required": true
+          },
+          "design": {
+            "description": "Selected design in an ad_placement",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "language": {
+            "description": "Name of the language from the ad and the ad_placement",
+            "type": "string",
+            "maxLength": 2,
+            "required": true
+          },
+          "page_type": {
+            "description": "Selected page_type in the ad_placement",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "position": {
+            "description": "Position of the ad_placement on a site",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "postview_conversions": {
+            "description": "Number of postview_conversions of an ad on a ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "postview_conversions_filtered": {
+            "description": "Filtered postview_conversions from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "postview_conversions_overdelivered": {
+            "description": "Overdelivered postview_conversions from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "postview_conversions_costs": {
+            "description": "Cost of an booking for postview_conversions",
+            "type": "number",
+            "required": true
+          },
+          "postclick_conversions": {
+            "description": "Number of postclick_conversions of an ad on a ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "postclick_conversions_filtered": {
+            "description": "Filtered postclick_conversions from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "postclick_conversions_overdelivered": {
+            "description": "Overdelivered postclick_conversions from an ad on an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "postclick_conversions_costs": {
+            "description": "Cost of an booking for postclick_conversions",
+            "type": "number",
+            "required": true
+          },
+          "product": {
+            "description": "Name of the product",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "product_id": {
+            "description": "ID of the product",
+            "type": "integer",
+            "required": true
+          },
+          "publisher": {
+            "description": "Name of the publisher company of the ad_placement",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "topic": {
+            "description": "Name of the selected topic of the ad_placement",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "topic_id": {
+            "description": "ID of the selected topic of the ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "website": {
+            "description": "Name of the website for an ad_placement",
+            "type": "string",
+            "maxLength": 255,
+            "required": true
+          },
+          "website_id": {
+            "description": "ID of the website for an ad_placement",
+            "type": "integer",
+            "required": true
+          },
+          "costs": {
+            "description": "Overall Costs",
+            "type": "number",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
