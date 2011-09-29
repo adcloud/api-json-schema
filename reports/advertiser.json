@@ -1,6 +1,6 @@
 {
   "description": "Response format for a advertiser report",
-  "extends": "./collection.json",
+  "extends": "../collection.json",
   "properties": {
     "result": {
       "description": "List of all report records",
