@@ -1,0 +1,14 @@
+{
+  "author": "Adcloud GmbH",
+  "name": "markdown viewer",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adcloud/api-json-schema.git"
+  },
+  "engines": {
+    "node": "0.4.11"
+  },
+  "dependencies": {"node-markdown": ">0.0.0"},
+  "devDependencies": {}
+}
