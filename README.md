@@ -69,6 +69,7 @@ A report\_data\_item consists of the following attributes:
     language                            | varchar(2)           | ISO 639-1
     country                             | varchar(2)           | ISO 3166-1 ALPHA-2
     currency                            | varchar(3)           | ISO 4217 ALPHA
+    design_id                           | int                  | Design identifier
     design                              | varchar(255)         | Design Name (eg Medium Rectangle, Leaderboard)
     ad_position                         | int                  | Position within the ad (eg first, second ad)
     ad_count                            | int                  | Number of items within the ad
