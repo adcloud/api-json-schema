@@ -97,6 +97,7 @@ A report\_data\_item consists of the following attributes:
 Collections are always paginated. You can specify the amount of records in the collection with the per\_page parameter, for example "&per\_page=200". The default is 50 records and the the maximum is 200 records per page. Meta information about the collection is inside the collection attribute of the response. There are urls for navigation (first, last, next and previous pages) and the overall size of the collection.
 
 The report data is grouped by the following tuple: 
+
  * ad\_placement\_id
  * topic\_id
  * booking\_id
