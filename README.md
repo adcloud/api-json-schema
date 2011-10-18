@@ -13,7 +13,7 @@ This describes the official Adcloud API. If you have any problems or requests pl
 
 ## How to authenticate your client
 
-To use the API you need a client\_id and client\_secret provided by Adcloud. With this your client can generate an access token that is necessary for every request. At the moment access tokens do not expire. 
+To use the API you need a client\_id and client\_secret provided by Adcloud. With this your client can generate an access token that is necessary for every request. At the moment access tokens expires after 2 hours. 
 
 Send a POST request to the following url including your client\_id and client\_secret:  
 [https://api.adcloud.com/v1/oauth/access\_token](https://api.adcloud.com/v1/oauth/access\_token)
