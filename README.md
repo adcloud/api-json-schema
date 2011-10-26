@@ -30,6 +30,10 @@ Send a GET request to the following url, including your access\_token and a date
 
     $> curl "https://api.adcloud.com/v1/reports/advertiser?access_token=<ACCESS_TOKEN>&filter[date]=<FILTER_DATE>"
 
+Or do it via HTTP Header:
+
+    $> curl -H "Authorization: Bearer <ACCESS_TOKEN>" "https://api.adcloud.com/v1/reports/advertiser?filter[date]=<FILTER_DATE>"
+  
 The response will look similar to this:
 
     {
